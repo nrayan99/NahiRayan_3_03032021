@@ -1,3 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
+.center {
+  margin: 0px auto;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header img {
+  width: 165px;
+  display: block;
+  padding-top: 22px;
+  padding: 22px 0px 12px 0px;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  font-size: 16px;
+  padding: 0px 18px;
+  border: none;
+}
+
+.search_localisation {
+  box-shadow: inset 5px 13px 5px -10px #cecece;
+  height: 50px;
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search_localisation p {
+  margin-left: 18px;
+}
+.search_localisation i {
+  position: relative;
+  bottom: 2px;
+}
+.search_restaurant {
+  padding: 45px 30px 35px 30px;
+  text-align: center;
+  background-color: #f6f6f6;
+  align-content: space-between;
+}
+.search_restaurant h1, .search_restaurant p {
+  margin-bottom: 25px;
+}
+
+#operating {
+  margin-top: 50px;
+}
+#operating h2 {
+  margin-bottom: 30px;
+  margin-left: 6%;
+}
+
+.operating_card {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  width: 87%;
+  height: 75px;
+  background-color: #f6f6f6;
+  margin-bottom: 30px;
+  box-shadow: 1px 4px 10px #dddddd;
+}
+.operating_card_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 25px;
+  height: 25px;
+  background-color: #9356DC;
+  color: white;
+  position: relative;
+  right: 10px;
+  margin-right: 12px;
+}
+.operating_card i {
+  color: #777777;
+  font-size: 20px;
+  margin-right: 27px;
+}
 
 /*# sourceMappingURL=style.css.map */

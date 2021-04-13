@@ -1,0 +1,45 @@
+#operating
+{
+    margin-top: 50px;
+    h2
+    {
+        margin-bottom: 30px;
+        margin-left: 6%;
+    }
+}
+.operating
+{
+    
+    &_card
+    {
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        width: 87%;
+        height: 75px;
+        background-color: $primary-bg-color;
+        
+        margin-bottom: 30px;
+        box-shadow: 1px 4px 10px darken($primary-bg-color, 10%);
+        &_num
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            width: 25px;
+            height: 25px;
+            background-color: $primary-color;
+            color: white;
+            position: relative;
+            right: 10px;
+            margin-right: 12px;
+        }
+        i
+        {
+            color: darken($primary-bg-color,50%);
+            font-size: 20px;
+            margin-right: 27px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import  'utils/variables';
+@import 'base/shaping';
+@import 'base/font';
+@import 'layouts/header';
+@import 'components/buttons';
+@import 'pages/search.scss';
+@import 'pages/operating';

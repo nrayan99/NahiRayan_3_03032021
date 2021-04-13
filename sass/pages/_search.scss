@@ -1,0 +1,33 @@
+.search
+{
+    
+    &_localisation
+    {
+        box-shadow:inset 5px 13px 5px -10px #cecece;
+        height: 50px;
+        background-color: darken($primary-bg-color, 5%) ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p
+        {
+            margin-left: 18px;
+        }
+        i
+        {
+            position: relative;
+            bottom: 2px;
+        }
+    }
+    &_restaurant
+    {
+        padding: 45px 30px 35px 30px;
+        text-align: center;
+        background-color: $primary-bg-color;
+        align-content: space-between;
+        h1,p
+        {
+            margin-bottom: 25px;
+        }
+    }
+}
