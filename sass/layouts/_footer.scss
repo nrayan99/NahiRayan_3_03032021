@@ -1,0 +1,42 @@
+footer
+{
+    padding : 25px 0px 25px 25px;
+    background-color: darken($primary-bg-color, 70%);
+    color:$footer-font-color; 
+    
+    p
+    {
+        margin-bottom: 25px;
+        font-size: 18px;
+        font-family: $font-heading;
+    }
+    ul
+    {
+        
+        list-style: none;
+        li
+        {
+            margin-bottom: 10px;
+            a
+            {
+                text-decoration: none;
+                color: $footer-font-color;
+            }
+            i
+            {
+                margin-right:  10px; ;
+                font-size: 14px;
+            }
+            .fa-hands-helping
+            {
+                font-size: 9.5px;
+            }
+            
+            
+        }
+  
+    }
+
+   
+    
+}

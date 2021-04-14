@@ -1,0 +1,78 @@
+#restaurants
+{
+    padding-bottom: 60px;
+    background-color: $primary-bg-color;
+    h2
+    {
+        padding-top: 58px;
+        margin-bottom: 27px;
+    }
+}
+
+.restaurant
+{
+    &_card
+    {
+        display: block;
+        height: 250px;
+        width: 88%;
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 18px;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        
+        &_img
+        {      
+            overflow: hidden;
+            height: 174px;
+            border-radius: 20px 20px 0px 0px; 
+            img
+            { 
+                
+                height: 250px;
+                width: 100%;
+                object-fit: cover;
+                position: relative;
+                bottom: 65px;
+            }
+        }
+        &_description
+        {
+            margin-left: 14px;
+            margin-top: 17px;
+            position: relative;
+            
+            i
+            {
+                position: absolute;
+                
+                font-size: 21px;
+                right: 24px;
+                top: 6px;
+            }
+            p 
+            {
+                margin-top: 3px;
+            }
+        }
+        
+    }
+}
+.new::after
+{
+    content: "Nouveau";
+    width: 80PX;
+    height: 30PX;
+    background-color: $tertiary-color;
+    position: absolute;
+    top: 12PX;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darken($tertiary-color, 40%);
+    font-weight: bold;
+    border-radius: 2px;
+}

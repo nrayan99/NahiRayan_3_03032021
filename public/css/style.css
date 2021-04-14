@@ -7,8 +7,20 @@
   margin: 0px auto;
 }
 
+h2 {
+  margin-left: 6%;
+}
+
+.card-shadow {
+  box-shadow: 1px 4px 10px #dddddd;
+}
+
 * {
   font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 header img {
@@ -16,6 +28,34 @@ header img {
   display: block;
   padding-top: 22px;
   padding: 22px 0px 12px 0px;
+}
+
+footer {
+  padding: 25px 0px 25px 25px;
+  background-color: #444444;
+  color: white;
+}
+footer p {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-family: "Shrikhand", sans-serif;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer ul li i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+footer ul li .fa-hands-helping {
+  font-size: 9.5px;
 }
 
 .btn {
@@ -55,10 +95,10 @@ header img {
 
 #operating {
   margin-top: 50px;
+  margin-bottom: 68px;
 }
 #operating h2 {
   margin-bottom: 30px;
-  margin-left: 6%;
 }
 
 .operating_card {
@@ -69,7 +109,6 @@ header img {
   height: 75px;
   background-color: #f6f6f6;
   margin-bottom: 30px;
-  box-shadow: 1px 4px 10px #dddddd;
 }
 .operating_card_num {
   display: flex;
@@ -88,6 +127,69 @@ header img {
   color: #777777;
   font-size: 20px;
   margin-right: 27px;
+}
+
+#restaurants {
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+}
+#restaurants h2 {
+  padding-top: 58px;
+  margin-bottom: 27px;
+}
+
+.restaurant_card {
+  display: block;
+  height: 250px;
+  width: 88%;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 18px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.restaurant_card_img {
+  overflow: hidden;
+  height: 174px;
+  border-radius: 20px 20px 0px 0px;
+}
+.restaurant_card_img img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 65px;
+}
+.restaurant_card_description {
+  margin-left: 14px;
+  margin-top: 17px;
+  position: relative;
+}
+.restaurant_card_description i {
+  position: absolute;
+  font-size: 21px;
+  right: 24px;
+  top: 6px;
+}
+.restaurant_card_description p {
+  margin-top: 3px;
+}
+
+.new::after {
+  content: "Nouveau";
+  width: 80PX;
+  height: 30PX;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 12PX;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #278870;
+  font-weight: bold;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
