@@ -23,11 +23,22 @@ h3 {
   font-size: 18px;
 }
 
+header {
+  position: relative;
+}
 header img {
   width: 165px;
   display: block;
   padding-top: 22px;
   padding: 22px 0px 12px 0px;
+}
+
+.return_btn {
+  position: absolute;
+  text-decoration: none;
+  color: #353535;
+  top: 25px;
+  left: 25px;
 }
 
 footer {
@@ -58,6 +69,69 @@ footer ul li .fa-hands-helping {
   font-size: 9.5px;
 }
 
+.menu_img {
+  height: 220px;
+}
+.menu_img--pos {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.menu_restaurant {
+  border-radius: 20px 20px 0px 0px;
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 30px 20px 58px 20px;
+}
+.menu_restaurant_heading {
+  margin: 0px 40px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_restaurant_heading h1 {
+  font-size: 28px;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 100;
+}
+.menu_restaurant_heading i {
+  font-size: 21px;
+  align-self: center;
+}
+.menu_restaurant_card {
+  width: 91%;
+  height: 42px;
+  padding: 13px 22px 13px 11px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.menu_restaurant_card_heading {
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  margin-left: 5px;
+  margin-top: 35px;
+}
+.menu_restaurant_card_heading--border {
+  width: 40px;
+  display: block;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+.menu_restaurant_card h3 {
+  margin-bottom: 3px;
+}
+.menu_restaurant_card p {
+  font-size: 14px;
+}
+.menu_restaurant_card_price {
+  position: absolute;
+  right: 22px;
+  bottom: 13px;
+}
+
 .btn {
   height: 50px;
   border-radius: 30px;
@@ -66,6 +140,11 @@ footer ul li .fa-hands-helping {
   font-size: 16px;
   padding: 0px 18px;
   border: none;
+}
+.btn_order {
+  padding: 0px 50px;
+  display: block;
+  margin: 40px auto 0px auto;
 }
 
 .search_localisation {

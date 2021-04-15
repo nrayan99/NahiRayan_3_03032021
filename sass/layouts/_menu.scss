@@ -1,0 +1,88 @@
+.menu
+{
+    &_img
+    {
+        
+        height: 220px;
+        &--pos
+        {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+    &_restaurant
+    {
+        border-radius: 20px 20px 0px 0px;
+        background-color: $primary-bg-color;
+        position: relative;
+        
+        padding : 30px 20px 58px 20px;
+        &_heading
+        {
+            margin: 0px 40px 20px 0px ;
+            
+            display: flex;
+            justify-content: space-between;
+            h1
+            {
+                font-size: 28px;
+                font-family: $font-heading;
+                font-weight: 100;
+            }
+            i
+            {
+                font-size: 21px;
+                align-self: center;
+            }
+        }
+
+        &_card
+        {
+            width:91%;
+            height: 42px;
+            padding : 13px 22px 13px 11px;
+            background-color: white;
+            border-radius: 15px;
+            position: relative;
+            margin-bottom: 15px;
+            &_heading
+            {
+                text-transform: uppercase;
+                padding-bottom: 3px;
+                margin-left: 5px;
+                margin-top: 35px;
+               
+                &--border
+                {
+                width:40px;
+                display: block;
+                height: 3px;
+                background-color: $tertiary-color;
+                margin-bottom: 15px;
+                margin-left: 5px;
+                }
+
+            }
+            h3
+            {
+                margin-bottom: 3px;
+            }
+            p
+            {
+                font-size: 14px;
+            }
+            &_price
+            {
+                position: absolute;
+                right: 22px;
+                bottom: 13px;
+            }
+            
+        }      
+    }
+    
+
+}
+
