@@ -1,0 +1,38 @@
+.loader {
+    position: fixed;
+    margin: -76px 0 0 -76px;
+    left: 50%;
+    top: 50%;
+    border: 16px solid  $primary-color; 
+    border-top: 16px solid $secondary-color;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear 3 , loader-opacity 3s ;
+    
+    z-index: -1;
+    opacity: 0;
+
+  }
+  #content 
+  {
+      opacity: 1;
+      animation: anim-content 3s ;
+  }
+
+  @keyframes anim-content
+  {
+    0% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% {transform: rotate(360deg);}
+    
+  }
+  @keyframes loader-opacity
+  {
+      25%{opacity: 1;}
+      90%{opacity: 1;}
+  }

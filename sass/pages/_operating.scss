@@ -19,7 +19,7 @@
         width: 87%;
         height: 75px;
         background-color: $primary-bg-color;
-        
+        cursor: pointer;
         margin-bottom: 30px;
         
         &_num
@@ -41,6 +41,13 @@
             color: darken($primary-bg-color,50%);
             font-size: 20px;
             margin-right: 27px;
+        }
+        &:hover
+        {
+            &>i
+            {
+                color:$primary-color;
+            }
         }
     }
 }

@@ -1,0 +1,25 @@
+.empty-heart
+{
+    cursor: pointer;
+    
+    &:hover
+    {
+        &>.filled-heart
+        {
+            transform: scale(1.10);
+            
+        }
+        
+    }
+}
+.filled-heart
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition: transform 500ms;
+    background: linear-gradient(45deg,lighten($secondary-color,5%),lighten($primary-color,5%));
+    -webkit-background-clip: text;
+    color: transparent;
+}

@@ -5,13 +5,39 @@
     color: white;
     background: linear-gradient(170deg,$secondary-color,$primary-color);
     font-size: 16px;
-    
+    position: relative;
     padding: 0px 18px;
     border: none;
+    z-index: 1;
+    box-shadow: 1px 4px 10px darken($primary-bg-color, 10%);
+    cursor:pointer;
     &_order
     {
         padding: 0px 50px;
         display: block;
         margin: 40px auto 0px auto;
+    }
+    &:hover
+    {
+        &::after
+        {
+            opacity: 1;
+        }
+    }
+    &::after
+    {
+        
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;  
+        left: 0;
+        background: linear-gradient(170deg,lighten($secondary-color,5%),lighten($primary-color,5%));
+        box-shadow: 1px 4px 10px darken($primary-bg-color, 50%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+        border-radius: 30px;
     }
 }
