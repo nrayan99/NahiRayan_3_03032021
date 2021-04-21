@@ -140,6 +140,24 @@ footer ul li .fa-hands-helping {
   bottom: 13px;
 }
 
+.menu_restaurant_starter {
+  animation: showing-menu 1s linear both;
+}
+.menu_restaurant_dish {
+  animation: showing-menu 1s 1s linear both;
+}
+.menu_restaurant_dessert {
+  animation: showing-menu 1s 2s linear both;
+}
+@keyframes showing-menu {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+  60% {
+    opacity: 0;
+  }
+}
 .btn {
   height: 50px;
   border-radius: 30px;

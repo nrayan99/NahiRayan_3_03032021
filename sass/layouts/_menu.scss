@@ -97,3 +97,36 @@
 
 }
 
+//** ANIMATIONS **//
+.menu
+{
+    &_restaurant
+    {
+        &_starter
+        {
+            
+            animation: showing-menu 1s linear both;
+            
+        }
+        &_dish
+        {
+            
+            animation: showing-menu 1s 1s linear both;
+        }
+        &_dessert
+        {
+            
+            animation: showing-menu 1s 2s linear both;
+        }
+    }
+}
+
+@keyframes showing-menu
+{
+    0%{opacity: 0;
+    transform: translate(0,50px)}
+    60%{opacity: 0;}
+    
+}
+
+
