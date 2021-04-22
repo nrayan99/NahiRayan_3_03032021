@@ -44,12 +44,20 @@
 
         &_card
         {
+            display: flex;
+            justify-content: space-between;
             min-height: 42px;
             padding : 13px 22px 13px 11px;
             background-color: white;
             border-radius: 15px;
             position: relative;
             margin-bottom: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            &_description
+            {
+                overflow: hidden;
+            }
             &_heading
             {
                 text-transform: uppercase;
@@ -73,22 +81,21 @@
                 margin-bottom: 3px;
                 
                 text-overflow: ellipsis;
-                display: block;
+                
                 overflow: hidden;
+                white-space: nowrap;
             }
             p
             {
                 font-size: 14px;
                 white-space: nowrap;
                 text-overflow: ellipsis;
-                display: block;
+                
                 overflow: hidden;
             }
             &_price
             {
-                position: absolute;
-                right: 22px;
-                bottom: 13px;
+                align-self: flex-end;
             }
             
         }      
@@ -117,6 +124,56 @@
         {
             
             animation: showing-menu 1s 2s linear both;
+        }
+       
+        &_card
+        {
+            &_price
+            {
+                align-self: flex-end;
+                transition: margin-right 500ms , margin-left 500ms;
+            }
+            &--select
+            {
+                
+                height: 100%;
+                width: 60px;
+                background-color: $tertiary-color;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0px 15px 15px 0px ;
+                transform-origin: 100% 50%;
+                transform: translateX(60px);
+                transition: transform 500ms;
+                i
+                {
+                    color:white;
+                    transform : rotate(0turn);
+                    transition: transform 500ms;
+                }
+
+            }
+            &:hover
+            {
+                &>.menu_restaurant_card_price
+                {
+                    margin-right: 60px;
+                    margin-left: 15px;
+                }
+                &>.menu_restaurant_card--select
+                {
+                    transform: translateX(0px);
+                    &>i
+                    {
+                        transform : rotate(1turn);
+                    }
+                }
+                
+            }
         }
     }
 }
