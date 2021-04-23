@@ -18,6 +18,7 @@
         height: 75px;
         background-color: $primary-bg-color;
         cursor: pointer;
+        @include center;
         margin-bottom: 30px;
         @include card-shadow;
         &__num
