@@ -9,10 +9,8 @@
     width: 120px;
     height: 120px;
     animation: spin 1.5s linear 3 , loader-opacity 3s ;
-    
     z-index: -1;
     opacity: 0;
-
   }
   #content 
   {
@@ -26,10 +24,10 @@
     100% {opacity: 0;}
   }
   
-  @keyframes spin {
+  @keyframes spin 
+  {
     0% { transform: rotate(0deg); }
     100% {transform: rotate(360deg);}
-    
   }
   @keyframes loader-opacity
   {

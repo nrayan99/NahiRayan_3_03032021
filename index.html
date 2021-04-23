@@ -12,25 +12,23 @@
         <link rel="shortcut icon" href="public/images/logo/favicon.ico">
         
         <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/prefixed/style.css">
     </head>
     
-    
-
     <body>
         <div class="loader"></div>
         <div id="content">
-
         <header>
             <img class="center" src="public/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"> 
         </header>
 
         <section id="search">
-            <div class="search_localisation center">
+            <div class="search__localisation center">
                 <i class="fas fa-map-marker-alt"></i>
                 <p><strong>Paris, Belleville</strong></p>
             </div>
 
-            <div class="search_restaurant">
+            <div class="search__restaurant">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button class="btn">Explorez nos restaurants</button>
@@ -39,77 +37,70 @@
 
         <section id="operating">
             <h2>Fonctionnement</h2>
-            
-                <div class="operating_card center card-shadow">
-                    <div class="operating_card_num">1</div>
-                    <i class="fas fa-mobile-alt"></i>
-                    <p><strong>Choisissez un restaurant</strong></p>
-                </div>
-                <div class="operating_card center card-shadow">
-                    <div class="operating_card_num">2</div>
-                    <i class="fas fa-list-ul"></i>
-                    <p><strong>Composez votre menu</strong></p>
-                </div>
-                <div class="operating_card center card-shadow">
-                    <div class="operating_card_num" >3</div>
-                    <i class="fas fa-store"></i>
-                    <p><strong>Dégustez au restaurant</strong></p>    
-                </div>
-            
+            <div class="operating__card center">
+                <div class="operating__card__num">1</div>
+                <i class="fas fa-mobile-alt"></i>
+                <p><strong>Choisissez un restaurant</strong></p>
+            </div>
 
+            <div class="operating__card center">
+                <div class="operating__card__num">2</div>
+                <i class="fas fa-list-ul"></i>
+                <p><strong>Composez votre menu</strong></p>
+            </div>
+
+            <div class="operating__card center">
+                <div class="operating__card__num" >3</div>
+                <i class="fas fa-store"></i>
+                <p><strong>Dégustez au restaurant</strong></p>    
+            </div>
         </section>
 
         <section id="restaurants">
             <h2>Restaurants</h2>
-
-            <a href="La-Palette-Du-Gout.html" class="restaurant_card center card-shadow new">
-                <div class="restaurant_card_img">
+            <a href="La-Palette-Du-Gout.html" class="restaurant__card center new">
+                <div class="restaurant__card__img">
                     <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout">
                 </div>
-
-                <div class="restaurant_card_description">
+                <div class="restaurant__card__description">
                     <h3>La palette du goût</h3>
                     <p>Ménilmontant</p>
-                    <i class="far fa-heart empty-heart"><i class="fas fa-heart filled-heart"></i></i>
-                    
-                    
+                    <i class="far fa-heart empty-heart"><i class="fas fa-heart filled-heart"></i></i>   
                 </div>
             </a>
-            <a href="La-Note-Enchantee.html" class="restaurant_card center card-shadow new">
-                <div class="restaurant_card_img">
+
+            <a href="La-Note-Enchantee.html" class="restaurant__card center new">
+                <div class="restaurant__card__img">
                     <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
                 </div>
-
-                <div class="restaurant_card_description">
+                <div class="restaurant__card__description">
                     <h3>La note enchantée</h3>
                     <p>Charonne</p>
                     <i  class="far fa-heart empty-heart"><i class="fas fa-heart filled-heart"></i></i>
                 </div>
             </a>
-            <a href="A-La-Francaise.html" class="restaurant_card center card-shadow">
-                <div class="restaurant_card_img">
+
+            <a href="A-La-Francaise.html" class="restaurant__card center">
+                <div class="restaurant__card__img">
                     <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
                 </div>
-
-                <div class="restaurant_card_description">
+                <div class="restaurant__card__description">
                     <h3>À la française</h3>
                     <p>Cité Rouge</p>
                     <i class="far fa-heart empty-heart"><i class="fas fa-heart filled-heart"></i></i>
                 </div>
             </a>
-            <a href="Le-Delice-Des-Sens.html" class="restaurant_card center card-shadow" >
-                <div class="restaurant_card_img">
+
+            <a href="Le-Delice-Des-Sens.html" class="restaurant__card center" >
+                <div class="restaurant__card__img">
                     <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
                 </div>
-
-                <div class="restaurant_card_description">
+                <div class="restaurant__card__description">
                     <h3>Le délice des sens</h3>
                     <p>Folie-Méricourt</p>
                     <i class="far fa-heart empty-heart"><i class="fas fa-heart filled-heart"></i></i>
                 </div>
             </a>
-
-
         </section>
 
         <footer>
@@ -118,10 +109,8 @@
                 <li><i class="fas fa-utensils"></i><a href=""><strong>Proposez un restaurant</strong></a></li>
                 <li><i class="fas fa-hands-helping"></i><a href=""><strong>Devenir partenaire</strong></a></li>
                 <li><a href=" ">Mentions légales</a></li>
-                <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
-                
+                <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>  
             </ul>
-
         </footer>
         </div>
     </body>

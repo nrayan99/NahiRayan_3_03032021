@@ -11,7 +11,7 @@
     z-index: 1;
     box-shadow: 1px 4px 10px darken($primary-bg-color, 10%);
     cursor:pointer;
-    &_order
+    &__order
     {
         padding: 0px 50px;
         display: block;
@@ -26,7 +26,6 @@
     }
     &::after
     {
-        
         content: "";
         position: absolute;
         top: 0;

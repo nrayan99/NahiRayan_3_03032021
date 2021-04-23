@@ -1,31 +1,26 @@
 .menu
 {
-    &_img
+    &__img
     {
-        
         height: 220px;
-        &--pos
+        img
         {
             height: 250px;
             width: 100%;
             object-fit: cover;
         }
-
     }
-    &_restaurant
+    &__restaurant
     {
         border-radius: 20px 20px 0px 0px;
         background-color: $primary-bg-color;
         position: relative;
-        
         padding : 30px 20px 58px 20px;
-        &_heading
+        &__heading
         {
             margin: 0px 40px 20px 0px ;
             position: relative;
             display: flex;
-            
-            
             h1
             {
                 font-size: 28px;
@@ -38,11 +33,9 @@
                 right: 0px;
                 font-size: 21px;
                 align-self: center;
-            }
-            
+            }    
         }
-
-        &_card
+        &__card
         {
             display: flex;
             justify-content: space-between;
@@ -54,17 +47,17 @@
             margin-bottom: 15px;
             overflow: hidden;
             cursor: pointer;
-            &_description
+            @include card-shadow;
+            &__description
             {
                 overflow: hidden;
             }
-            &_heading
+            &__heading
             {
                 text-transform: uppercase;
                 padding-bottom: 3px;
                 margin-left: 5px;
                 margin-top: 35px;
-               
                 &--border
                 {
                 width:40px;
@@ -74,14 +67,11 @@
                 margin-bottom: 15px;
                 margin-left: 5px;
                 }
-
             }
             h3
             {
                 margin-bottom: 3px;
-                
                 text-overflow: ellipsis;
-                
                 overflow: hidden;
                 white-space: nowrap;
             }
@@ -90,52 +80,43 @@
                 font-size: 14px;
                 white-space: nowrap;
                 text-overflow: ellipsis;
-                
                 overflow: hidden;
             }
-            &_price
+            &__price
             {
                 align-self: flex-end;
             }
             
         }      
     }
-    
-
 }
 
 //** ANIMATIONS **//
 .menu
 {
-    &_restaurant
+    &__restaurant
     {
-        &_starter
+        &__starter
         {
-            
             animation: showing-menu 1s linear both;
-            
         }
-        &_dish
+        &__dish
         {
-            
             animation: showing-menu 1s 1s linear both;
         }
-        &_dessert
-        {
-            
+        &__dessert
+        { 
             animation: showing-menu 1s 2s linear both;
-        }
-       
-        &_card
+        }  
+        &__card
         {
-            &_price
+            &__price
             {
                 align-self: flex-end;
                 transition: margin-right 500ms , margin-left 500ms;
             }
             &--select
             {
-                
                 height: 100%;
                 width: 60px;
                 background-color: $tertiary-color;
@@ -155,16 +136,15 @@
                     transform : rotate(0turn);
                     transition: transform 500ms;
                 }
-
             }
             &:hover
             {
-                &>.menu_restaurant_card_price
+                &>.menu__restaurant__card__price
                 {
                     margin-right: 60px;
                     margin-left: 15px;
                 }
-                &>.menu_restaurant_card--select
+                &>.menu__restaurant__card--select
                 {
                     transform: translateX(0px);
                     &>i
@@ -172,7 +152,6 @@
                         transform : rotate(1turn);
                     }
                 }
-                
             }
         }
     }
@@ -183,7 +162,4 @@
     0%{opacity: 0;
     transform: translate(0,50px)}
     60%{opacity: 0;}
-    
 }
-
-

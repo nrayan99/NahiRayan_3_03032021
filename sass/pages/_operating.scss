@@ -4,14 +4,12 @@
     margin-bottom: 68px;
     h2
     {
-        margin-bottom: 30px;
-        
+        margin-bottom: 30px;   
     }
 }
 .operating
 {
-    
-    &_card
+    &__card
     {
         display: flex;
         align-items: center;
@@ -21,8 +19,8 @@
         background-color: $primary-bg-color;
         cursor: pointer;
         margin-bottom: 30px;
-        
-        &_num
+        @include card-shadow;
+        &__num
         {
             display: flex;
             justify-content: center;
