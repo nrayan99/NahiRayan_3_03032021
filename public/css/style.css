@@ -23,6 +23,7 @@ header {
   position: relative;
 }
 header img {
+  margin: 0px auto;
   width: 165px;
   display: block;
   padding-top: 22px;
